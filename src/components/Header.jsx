@@ -8,11 +8,14 @@ function Header() {
       <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-brand-600 rounded-md flex items-center justify-center">
-              <svg className="w-5 h-5 text-white" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                <path d="M4 6h12M4 10h9M4 14h6" />
-              </svg>
-            </div>
+            <svg className="w-8 h-8" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <rect width="512" height="512" rx="96" fill="#0074c5"/>
+              <rect x="120" y="128" width="272" height="40" rx="20" fill="white"/>
+              <rect x="120" y="236" width="200" height="40" rx="20" fill="white" opacity="0.9"/>
+              <rect x="120" y="344" width="128" height="40" rx="20" fill="white" opacity="0.8"/>
+              <circle cx="380" cy="364" r="32" fill="white" opacity="0.95"/>
+              <rect x="260" y="352" width="88" height="24" rx="12" fill="white" opacity="0.4"/>
+            </svg>
             <span className="font-bold text-lg text-slate-900">Follow My Lead</span>
           </a>
 

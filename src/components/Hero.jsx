@@ -30,15 +30,23 @@ function Hero() {
         </div>
 
         <div className="mt-16 md:mt-20">
-          <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 md:p-12">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-4">
-              <FlowStep label="Your leads" />
-              <FlowArrow />
-              <FlowStep label="Intelligence layer" />
-              <FlowArrow />
-              <FlowStep label="Priority insights" />
-              <FlowArrow />
-              <FlowStep label="Relevant outreach" />
+          <div className="relative rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
+              alt="Marketing team collaborating on strategy"
+              className="w-full h-64 md:h-80 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-4">
+                <FlowStep label="Your leads" />
+                <FlowArrow />
+                <FlowStep label="Intelligence layer" />
+                <FlowArrow />
+                <FlowStep label="Priority insights" />
+                <FlowArrow />
+                <FlowStep label="Relevant outreach" />
+              </div>
             </div>
           </div>
         </div>
@@ -50,17 +58,17 @@ function Hero() {
 function FlowStep({ label }) {
   return (
     <div className="flex flex-col items-center gap-3 text-center">
-      <div className="w-14 h-14 rounded-xl bg-brand-50 border border-brand-100 flex items-center justify-center text-brand-600">
-        <div className="w-3 h-3 rounded-full bg-brand-500" />
+      <div className="w-14 h-14 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center">
+        <div className="w-3 h-3 rounded-full bg-white" />
       </div>
-      <span className="text-sm font-medium text-slate-700">{label}</span>
+      <span className="text-sm font-medium text-white">{label}</span>
     </div>
   )
 }
 
 function FlowArrow() {
   return (
-    <div className="text-slate-300 hidden md:block">
+    <div className="text-white/60 hidden md:block">
       <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
       </svg>

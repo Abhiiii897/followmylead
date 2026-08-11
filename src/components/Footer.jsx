@@ -5,11 +5,14 @@ function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start gap-8">
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <div className="w-7 h-7 bg-brand-600 rounded-md flex items-center justify-center">
-                <svg className="w-4 h-4 text-white" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                  <path d="M4 6h12M4 10h9M4 14h6" />
-                </svg>
-              </div>
+              <svg className="w-7 h-7" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <rect width="512" height="512" rx="96" fill="#0074c5"/>
+                <rect x="120" y="128" width="272" height="40" rx="20" fill="white"/>
+                <rect x="120" y="236" width="200" height="40" rx="20" fill="white" opacity="0.9"/>
+                <rect x="120" y="344" width="128" height="40" rx="20" fill="white" opacity="0.8"/>
+                <circle cx="380" cy="364" r="32" fill="white" opacity="0.95"/>
+                <rect x="260" y="352" width="88" height="24" rx="12" fill="white" opacity="0.4"/>
+              </svg>
               <span className="font-bold text-white">Follow My Lead</span>
             </div>
             <p className="text-sm max-w-xs">
